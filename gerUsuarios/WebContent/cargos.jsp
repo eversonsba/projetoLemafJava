@@ -3,7 +3,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
+<style>
+<!--
+table, th, td {
+	border: 1px solid black;
+}
+-->
+</style>
 </head>
 <body>
 
@@ -18,18 +24,6 @@
 		<div id="top" class="row">
 			<div class="col-md-3">
 				<h3>Cargos</h3>
-			</div>
-
-			<div class="col-md-6">
-				<div class="input-group h2">
-					<input name="data[search]" class="form-control" id="search"
-						type="text" placeholder="Pesquisar Cargos"> <span
-						class="input-group-btn">
-						<button class="btn btn-danger" type="submit">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
-				</div>
 			</div>
 
 			<div class="col-md-3">

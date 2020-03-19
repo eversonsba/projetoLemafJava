@@ -6,8 +6,7 @@
 		
 	</head>
 	<body>
-		
-			
+					
 		<div id="container" class="container-fluid">
 			<h3 class="page-header">${empty cargo ? "Adicionar Cargo" : "Editar Cargo"}</h3>
 
@@ -27,7 +26,8 @@
 					</div>
 					
 				</div>
-				<hr />
+				<div class="col-md-6">
+			</div><hr />
 				<div id="actions" class="row pull-right">
 					<div class="col-md-12">
 						<a href="${pageContext.request.contextPath}/cargos" class="btn btn-default">Cancelar</a>

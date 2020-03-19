@@ -4,6 +4,14 @@
 <html lang="pt-br">
 <head>
 
+<style>
+<!--
+table, th, td {
+	border: 1px solid black;
+}
+-->
+</style>
+
 </head>
 <body>
 
@@ -20,17 +28,7 @@
 				<h3>Usuarios</h3>
 			</div>
 
-			<div class="col-md-6">
-				<div class="input-group h2">
-					<input name="data[search]" class="form-control" id="search"
-						type="text" placeholder="Pesquisar Usuarios"> <span
-						class="input-group-btn">
-						<button class="btn btn-danger" type="submit">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
-				</div>
-			</div>
+
 
 			<div class="col-md-3">
 				<a href="/gerUsuarios/usuario/form"
@@ -42,7 +40,7 @@
 		<hr />
 
 		<div id="list" class="row">
-			<div class="table-responsive col-md-12">
+			<div "class="table-responsive col-md-12">
 				<table class="table table-striped table-hover" cellspacing="0"
 					cellpadding="0">
 					<thead>
@@ -66,7 +64,7 @@
 								<td>${usuarios.getSexo()}</td>
 								<td>${usuarios.getCargo().getNome()}</td>
 								<td>${usuarios.getData_cadastro()}</td>
-								
+
 								<td class="actions"><a
 									href="${pageContext.request.contextPath}/usuario/update?cpf=${usuarios.getCpf()}">
 										<span class="glyphicon glyphicon-edit"></span> Editar
