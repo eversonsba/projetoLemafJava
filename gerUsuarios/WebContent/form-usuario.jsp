@@ -37,7 +37,7 @@ table, th, td {
 						placeholder="CPF do Usuario" required
 						oninvalid="this.setCustomValidity('Por favor, informe o CPF do Usuario')"
 						oninput="setCustomValidity('')" value="${usuario.getCpf()}">
-					<label for="name">Data de nascimento</label> <input type="date"
+					<label for="name">Data de nascimento</label> <input type="text"
 						class="form-control" id="data_nascimento" name="data_nascimento"
 						autofocus="autofocus" placeholder="Data de nascimento : aaaa-mm-dd" required
 						oninvalid="this.setCustomValidity('Por favor, informe a data de Nascimento do Usuario')"
