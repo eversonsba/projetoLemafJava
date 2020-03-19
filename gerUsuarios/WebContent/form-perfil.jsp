@@ -19,7 +19,7 @@ table, th, td {
 </head>
 <body>
 
-
+<%@ include file="menu.html" %>
 	<div id="container" class="container-fluid">
 		<h3 class="page-header">${empty perfil ? "Adicionar Perfil" : "Editar Perfil"}</h3>
 
@@ -55,8 +55,8 @@ table, th, td {
 	<div id="actions" class="row pull-right">
 		<div class="col-md-12">
 			<a href="${pageContext.request.contextPath}/perfis"
-				class="btn btn-default">Cancelar</a>
-			<button type="submit" x>${not empty usuario ? "Alterar Perfis" : "Cadastrar Perfis"}</button>
+				class="btn btn-danger">Cancelar</a>
+			<button class="btn btn-success" type="submit" x>${not empty usuario ? "Alterar Perfis" : "Cadastrar Perfis"}</button>
 		</div>
 	</div>
 	</form>

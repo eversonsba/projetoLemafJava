@@ -19,7 +19,7 @@ table, th, td {
 </head>
 <body>
 
-
+<%@ include file="menu.html" %>
 	<div id="container" class="container-fluid">
 		<h3 class="page-header">${empty usuario ? "Adicionar Usuario" : "Editar Usuario"}</h3>
 
@@ -37,9 +37,9 @@ table, th, td {
 						placeholder="CPF do Usuario" required
 						oninvalid="this.setCustomValidity('Por favor, informe o CPF do Usuario')"
 						oninput="setCustomValidity('')" value="${usuario.getCpf()}">
-					<label for="name">Data de nascimento</label> <input type="text"
+					<label for="name">Data de nascimento</label> <input type="date"
 						class="form-control" id="data_nascimento" name="data_nascimento"
-						autofocus="autofocus" placeholder="Data de nascimento" required
+						autofocus="autofocus" placeholder="Data de nascimento : aaaa-mm-dd" required
 						oninvalid="this.setCustomValidity('Por favor, informe a data de Nascimento do Usuario')"
 						oninput="setCustomValidity('')"
 						value="${usuario.getDataNascimento()}"> <label for="name">Sexo</label>
@@ -69,8 +69,8 @@ table, th, td {
 	<div id="actions" class="row pull-right">
 		<div class="col-md-12">
 			<a href="${pageContext.request.contextPath}/usuarios"
-				class="btn btn-default">Cancelar</a>
-			<button type="submit" x>${not empty usuario ? "Alterar Usuario" : "Cadastrar Usuario"}</button>
+				class="btn btn-danger">Cancelar</a>
+			<button type="submit" class="btn btn-success" x>${not empty usuario ? "Alterar Usuario" : "Cadastrar Usuario"}</button>
 		</div>
 	</div>
 	</form>

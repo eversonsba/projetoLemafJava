@@ -13,13 +13,13 @@
 <style>
 <!--
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid black;class="btn btn-warning"
 }
 -->
 </style>
 </head>
 <body>
-
+<%@ include file="menu.html" %>
 	<div id="container" class="container-fluid">
 		<div id="alert"
 			style="${not empty message ? 'display: block;' : 'display: none;'}"
@@ -61,7 +61,7 @@ table, th, td {
 								<td>${perfis.getNome()}</td>
 								<td>${perfis.getUsuario().getNome()}</td>
 								
-								<td class="actions"><a
+								<td class="actions"><a class="btn btn-warning"
 									href="${pageContext.request.contextPath}/perfil/update?id=${perfis.getId()}">
 										<span class="glyphicon glyphicon-edit"></span> Editar
 								</a></td>

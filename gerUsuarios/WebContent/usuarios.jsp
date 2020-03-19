@@ -19,7 +19,7 @@ table, th, td {
 
 </head>
 <body>
-
+<%@ include file="menu.html" %>
 	<div id="container" class="container-fluid">
 		<div id="alert"
 			style="${not empty message ? 'display: block;' : 'display: none;'}"
@@ -70,7 +70,7 @@ table, th, td {
 								<td>${usuarios.getCargo().getNome()}</td>
 								<td>${usuarios.getData_cadastro()}</td>
 
-								<td class="actions"><a
+								<td class="actions"><a class="btn btn-warning"
 									href="${pageContext.request.contextPath}/usuario/update?cpf=${usuarios.getCpf()}">
 										<span class="glyphicon glyphicon-edit"></span> Editar
 								</a></td>

@@ -19,6 +19,7 @@ table, th, td {
 </head>
 <body>
 
+<%@ include file="menu.html" %>
 	<div id="container" class="container-fluid">
 		<div id="alert"
 			style="${not empty message ? 'display: block;' : 'display: none;'}"
@@ -58,9 +59,9 @@ table, th, td {
 							<tr>
 								<td>${cargos.getId()}</td>
 								<td>${cargos.getNome()}</td>
-								<td class="actions"><a
+								<td class="actions"><a class="btn btn-warning"
 									href="${pageContext.request.contextPath}/cargo/update?id=${cargos.getId()}">
-										<span class="glyphicon glyphicon-edit"></span> Editar
+										<span class=" glyphicon glyphicon-edit"></span> Editar
 								</a></td>
 								<td class="actions">
 									<form

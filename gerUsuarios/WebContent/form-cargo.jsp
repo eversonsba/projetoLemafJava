@@ -18,7 +18,7 @@ table, th, td {
 </style>
 	</head>
 	<body>
-					
+			<%@ include file="menu.html" %>		
 		<div id="container" class="container-fluid">
 			<h3 class="page-header">${empty cargo ? "Adicionar Cargo" : "Editar Cargo"}</h3>
 
@@ -42,8 +42,8 @@ table, th, td {
 			</div><hr />
 				<div id="actions" class="row pull-right">
 					<div class="col-md-12">
-						<a href="${pageContext.request.contextPath}/cargos" class="btn btn-default">Cancelar</a>
-						<button type="submit"x>${not empty cargo ? "Alterar Cargo" : "Cadastrar Cargo"}</button>
+						<a href="${pageContext.request.contextPath}/cargos" class="btn btn-danger btn-default">Cancelar</a>
+						<button class = "btn btn-success" type="submit"x>${not empty cargo ? "Alterar Cargo" : "Cadastrar Cargo"}</button>
 					</div>
 				</div>
 			</form>
