@@ -1,0 +1,7 @@
+Criar um baco de dados com o nome "gerenciador_usuarios" e importar o arquivo gerenciador_usuarios.sql para criaçao do banco. 
+
+Caso ocorra algum problema na conexao com o banco de dados vefirificar as informações do arquivo MySQLConnectionFactory.java de acordo com o seu servidor local
+
+Importar o projeto gerUsuarios na sua IDE e caso ocorra erros nos imports, importar o arquivo javax.servlet-api-3.1.0.jar.
+
+
